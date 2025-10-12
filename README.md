@@ -1,6 +1,3 @@
-Aquí está el README completo para copiar y pegar:
-
-```markdown
 # 🛰️ Sistema de Alerta Temprana de Deslizamientos - ISA
 
 Dashboard interactivo para monitoreo de torres de transmisión que combina amenaza estática, pendiente del terreno y precipitación en tiempo real.
@@ -247,3 +244,4 @@ Este proyecto es propiedad de ISA INTERCOLOMBIA. Todos los derechos reservados.
 
 **Versión**: 1.0  
 **Última actualización**: Enero 2025
+git
