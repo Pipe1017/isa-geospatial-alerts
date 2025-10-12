@@ -1,10 +1,45 @@
-venv/
+# Python
 __pycache__/
-.ipynb_checkpoints/
+*.py[cod]
 *.pyc
-.env
-data/01_raw/
-# Archivos grandes - No subir a GitHub
-data/02_processed/*.tif
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Archivos GRANDES - NO subir a GitHub
 data/01_raw/*.tif
-*.tif
+data/01_raw/*.adf
+data/02_processed/*.tif
+*.geotiff
+*.tiff
+
+# Datos procesados (regenerables)
+data/02_processed/AmeMM_100k_clasificado.tif
+data/02_processed/amenaza_*.tif
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Git LFS
+.gitattributes
+
+# Streamlit
+.streamlit/secrets.toml
