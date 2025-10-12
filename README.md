@@ -228,17 +228,9 @@ Los archivos raster `.tif` (>100MB) no están incluidos en el repositorio por su
 
 ## 👥 Autor
 
-**ISA INTERCOLOMBIA**  
+**Felipe Ruiz**  
 Sistema de Alerta Temprana de Deslizamientos  
 2025
-
-## 📧 Contacto
-
-Para preguntas o sugerencias sobre este proyecto, contactar al equipo de Gestión de Riesgos de ISA.
-
-## 📄 Licencia
-
-Este proyecto es propiedad de ISA INTERCOLOMBIA. Todos los derechos reservados.
 
 ---
 
