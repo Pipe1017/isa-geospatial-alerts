@@ -1,0 +1,8 @@
+ID_Torre,Nombre,Latitud,Longitud,Amenaza_Valor,Amenaza_Nivel
+TORRE_001,Torre 1,6.642631,-71.8147,2,Media
+TORRE_002,Torre 2,6.858107,-71.902591,1,Baja
+TORRE_003,Torre 3,6.841745,-71.391727,1,Baja
+TORRE_004,Torre 4,6.356094,-70.825931,3,Alta
+TORRE_005,Torre 5,6.71083,-70.666629,1,Baja
+TORRE_006,Torre 6,6.634446,-71.314822,2,Media
+TORRE_007,Torre 7,6.21413,-71.946536,3,Alta

@@ -1,0 +1,8 @@
+ID_Torre,Nombre,Latitud,Longitud,Amenaza_Valor_Continuo,Amenaza_Valor,Amenaza_Nivel,Lluvia_72h,Lluvia_24h,Nivel_Alerta,Emoji_Alerta,Prioridad
+TORRE_001,Torre 1,6.642631,-71.8147,,0,Sin Datos,32.0,8.6,VERDE,🟢,1
+TORRE_002,Torre 2,6.858107,-71.902591,,0,Sin Datos,46.3,24.0,VERDE,🟢,1
+TORRE_003,Torre 3,6.841745,-71.391727,,0,Sin Datos,34.3,9.0,VERDE,🟢,1
+TORRE_004,Torre 4,6.356094,-70.825931,,0,Sin Datos,31.499999999999996,10.399999999999999,VERDE,🟢,1
+TORRE_005,Torre 5,6.71083,-70.666629,,0,Sin Datos,27.700000000000003,9.9,VERDE,🟢,1
+TORRE_006,Torre 6,6.634446,-71.314822,,0,Sin Datos,35.8,7.5,VERDE,🟢,1
+TORRE_007,Torre 7,6.21413,-71.946536,,0,Sin Datos,40.6,10.3,VERDE,🟢,1

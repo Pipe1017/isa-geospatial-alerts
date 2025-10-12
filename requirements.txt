@@ -1,0 +1,27 @@
+# --- Core ---
+pandas>=2.2.2
+numpy>=1.26.4
+
+# --- Geospatial analysis ---
+geopandas>=1.0.1
+shapely>=2.0.5
+fiona>=1.9.6
+pyproj>=3.6.1
+rasterio>=1.3.9
+folium>=0.17.0
+
+# --- Visualization ---
+matplotlib>=3.9.2
+seaborn>=0.13.2
+plotly>=5.24.1
+
+# --- Dashboard ---
+streamlit>=1.38.0
+
+# --- Utilities ---
+requests>=2.32.3
+python-dotenv>=1.0.1
+tqdm>=4.66.5
+
+# --- Optional for data validation / ML ---
+scikit-learn>=1.5.2

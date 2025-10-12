@@ -1,0 +1,16 @@
+ID_Torre,Nombre,Latitud,Longitud,Amenaza_SGC,Amenaza_Valor,Pendiente_Grados,Pendiente_Clase,Elevacion_msnm,Historial_Eventos,Distancia_Drenaje_m,Tipo_Suelo,Cobertura_Vegetal,Indice_Riesgo,Clasificacion_Riesgo
+TORRE_001,Torre 1,6.642631,-71.8147,Baja,2,11.83,Baja,2342,False,455,Limoso,Cultivos,44.55,Medio
+TORRE_002,Torre 2,6.858107,-71.902591,Muy Alta,5,46.08,Alta,1146,False,493,Mixto,Pastos,96.0,Alto
+TORRE_003,Torre 3,6.841745,-71.391727,Media,3,25.25,Media,520,True,279,Limoso,Pastos,89.93,Alto
+TORRE_004,Torre 4,6.356094,-70.825931,Media,3,24.32,Media,1340,False,360,Arcilloso,Bosque Denso,67.46,Alto
+TORRE_005,Torre 5,6.71083,-70.666629,Baja,2,12.91,Baja,666,True,313,Rocoso,Pastos,79.23,Alto
+TORRE_006,Torre 6,6.634446,-71.314822,Baja,2,16.12,Media,1797,False,280,Rocoso,Pastos,59.26,Medio
+TORRE_007,Torre 7,6.21413,-71.946536,Muy Baja,1,1.39,Baja,887,False,465,Rocoso,Bosque Denso,38.81,Medio
+TORRE_008,Torre 8,6.994109,-72.023901,Alta,4,32.92,Alta,1100,False,471,Mixto,Pastos,86.39,Alto
+TORRE_009,Torre 9,7.04891,-72.153202,Media,3,23.66,Media,815,False,224,Arcilloso,Suelo Desnudo,66.13,Alto
+TORRE_010,Torre 10,7.080816,-72.214008,Media,3,24.56,Media,513,False,261,Mixto,Bosque Disperso,80.23,Alto
+TORRE_011,Torre 11,7.152109,-72.350767,Muy Baja,1,7.85,Baja,741,False,199,Mixto,Bosque Disperso,46.32,Medio
+TORRE_012,Torre 12,7.186571,-72.429217,Muy Alta,5,43.99,Alta,1276,True,305,Arcilloso,Bosque Denso,133.21,Alto
+TORRE_013,Torre 13,7.225404,-72.46401,Alta,4,35.14,Alta,1869,False,222,Arcilloso,Cultivos,102.26,Alto
+TORRE_014,Torre 14,7.271783,-72.456399,Baja,2,15.92,Media,1064,False,217,Arcilloso,Bosque Denso,57.47,Medio
+TORRE_015,Torre 15,7.314922,-72.502064,Baja,2,10.46,Baja,1397,False,246,Arcilloso,Cultivos,55.05,Medio

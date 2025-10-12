@@ -1,0 +1,28 @@
+
+======================================================================
+REPORTE DE ALERTAS - SISTEMA DE MONITOREO DE TORRES
+======================================================================
+
+Fecha y Hora: 2025-10-11 20:25:17
+Total de Torres: 7
+
+RESUMEN DE ALERTAS:
+-------------------
+🔴 ROJAS (Críticas):      0 torre(s)
+🟡 AMARILLAS (Precaución): 0 torre(s)
+🟢 VERDES (Normal):       7 torre(s)
+
+
+======================================================================
+CRITERIOS DE ALERTA:
+
+Amenaza ALTA:
+   • Alerta AMARILLA: Precipitación > 60mm en 72h
+   • Alerta ROJA: Precipitación > 100mm en 72h
+
+Amenaza MEDIA:
+   • Alerta AMARILLA: Precipitación > 120mm en 72h
+
+Amenaza BAJA:
+   • Sin alertas automáticas
+======================================================================
