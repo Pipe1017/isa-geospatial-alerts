@@ -4,3 +4,7 @@ __pycache__/
 *.pyc
 .env
 data/01_raw/
+# Archivos grandes - No subir a GitHub
+data/02_processed/*.tif
+data/01_raw/*.tif
+*.tif
