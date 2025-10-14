@@ -1,140 +1,143 @@
-# 🛰️ Sistema de Alerta Temprana de Deslizamientos
+# 🛰️ Sistema de Alerta Temprana de Deslizamientos - ISA INTERCOLOMBIA
 
-**Prueba Técnica: Analista de Datos de Mantenimiento**  
-**Candidato: Felipe Ruiz**  
-**Fecha: Octubre 2025**
+**Prueba Técnica**: Analista de Datos de Mantenimiento  
+**Candidato**: Felipe Ruiz Zea  
+**Fecha**: Enero 2025  
+**Repositorio**: https://github.com/Pipe1017/isa-geospatial-alerts
 
 ---
 
-Prototipo de dashboard interactivo que combina datos de amenaza geoespacial y precipitación en tiempo real para generar alertas operacionales en torres de transmisión.
+## 📋 Descripción
 
-## 🎯 ¿Qué hace este proyecto?
+Dashboard interactivo que combina **análisis geoespacial** y **datos meteorológicos en tiempo real** para generar alertas operacionales en torres de transmisión.
 
-Sistema que monitorea 15 torres en Arauca, Norte de Santander y Boyacá, generando 3 niveles de alerta:
-
+**Sistema de 3 niveles de alerta:**
 - 🟢 **Verde**: Condiciones normales
 - 🟡 **Amarilla**: Precaución - aumentar monitoreo  
-- 🔴 **Roja**: Crítica - acción inmediata requerida
+- 🔴 **Roja**: Crítica - acción inmediata
 
-**Combina:**
-1. Amenaza estática del terreno (clasificación SGC)
-2. Pendiente del terreno
-3. Precipitación en tiempo real (API Open-Meteo)
+**Integra:**
+- Amenaza estática del terreno (clasificación SGC)
+- Pendiente del terreno
+- Precipitación en tiempo real (API Open-Meteo)
+
+**Cobertura**: 15 torres en Arauca, Norte de Santander y Boyacá
 
 ---
 
-## ⚙️ Instalación y Configuración
+## ⚡ Instalación
 
-Para mantener las dependencias del proyecto aisladas y evitar conflictos, este repositorio incluye un entorno virtual (`venv`).  
-Sigue los pasos correspondientes a tu sistema operativo.
-
-### 🔹 Opción 1: Windows (En PowerShell o Command Prompt)
-
+### 1. Clonar repositorio
 ```bash
-# 1. Clonar el repositorio y moverse a la carpeta
 git clone https://github.com/Pipe1017/isa-geospatial-alerts.git
 cd isa-geospatial-alerts
-
-# 2. Activar el entorno virtual
-# (Notarás que la línea de comandos ahora empieza con "(venv)")
-.\venv\Scripts\activate
-
-# 3. Instalar las dependencias requeridas
-pip install -r requirements.txt
-
-# 4. Navegar a la carpeta del dashboard y generar datos de prueba
-cd dashboard
-python simular_datos.py
-
-# 5. Ejecutar el dashboard
-streamlit run app.py
 ```
 
-### 🔹 Opción 2: macOS / Linux (En la Terminal)
+### 2. Crear y activar entorno virtual
 
+**macOS/Linux:**
 ```bash
-# 1. Clonar el repositorio y moverse a la carpeta
-git clone https://github.com/Pipe1017/isa-geospatial-alerts.git
-cd isa-geospatial-alerts
-
-# 2. Activar el entorno virtual
-# (Notarás que la línea de comandos ahora empieza con "(venv)")
+python3 -m venv venv
 source venv/bin/activate
+```
 
-# 3. Instalar las dependencias requeridas
+**Windows (CMD):**
+```cmd
+python -m venv venv
+venv\Scripts\activate
+```
+
+**Windows (PowerShell):**
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+```
+
+> 💡 Verás `(venv)` al inicio de tu terminal cuando esté activado
+
+### 3. Instalar dependencias
+```bash
 pip install -r requirements.txt
+```
 
-# 4. Navegar a la carpeta del dashboard y generar datos de prueba
+### 4. Generar datos de prueba
+```bash
 cd dashboard
 python simular_datos.py
+```
 
-# 5. Ejecutar el dashboard
+### 5. Ejecutar dashboard
+```bash
 streamlit run app.py
 ```
 
+✅ Se abre automáticamente en `http://localhost:8501`
+
 ---
 
-## 📁 Estructura del Proyecto
-
+## 📁 Estructura
 ```
 isa-geospatial-alerts/
 ├── dashboard/
-│   ├── app.py              # Dashboard Streamlit
+│   ├── app.py              # Dashboard principal
 │   └── simular_datos.py    # Genera datos de prueba
-├── notebooks/
-│   ├── 01-exploracion-tiff-amenaza.ipynb      # Análisis geoespacial
-│   └── 02-analisis-torres-precipitacion.ipynb # Integración API
-└── data/
-    └── 03_external/        # CSVs generados automáticamente
+├── notebooks/              # Análisis exploratorio
+│   ├── 01-exploracion-tiff-amenaza.ipynb
+│   └── 02-analisis-torres-precipitacion.ipynb
+└── data/03_external/       # CSVs (generados automáticamente)
 ```
 
+> ⚠️ **Nota**: El directorio `venv/` no está en el repositorio (excluido en `.gitignore`)
+
 ---
 
-## 🎨 Funcionalidades del Dashboard
+## 🎨 Funcionalidades
 
-- **Mapa interactivo** con alertas por torre
+- **Mapa interactivo** con alertas georreferenciadas
 - **Matriz de riesgo** (Amenaza vs Precipitación)
-- **Gráficos temporales** de evolución de riesgo
-- **Tabla exportable** con todas las torres
-- **Actualización en tiempo real** de datos de lluvia
+- **Gráficos temporales** de evolución por torre
+- **Tabla exportable** a CSV
+- **Actualización en tiempo real** vía API
 
 ---
 
-## 📊 Matriz de Umbrales
+## 📖 Matriz de Umbrales
 
-| Amenaza | 🟡 Amarilla | 🔴 Roja |
-|---------|-------------|---------|
-| Muy Alta | > 80mm | > 100mm |
-| Alta | > 100mm | > 120mm |
-| Media | > 150mm | > 200mm |
-
-*Precipitación acumulada en 72 horas*
+| Amenaza | 🟡 Amarilla | 🔴 Roja | Ventana |
+|---------|-------------|---------|---------|
+| Muy Alta | > 80mm | > 100mm | 72h |
+| Alta | > 100mm | > 120mm | 72h |
+| Media | > 150mm | > 200mm | 72h |
+| Baja | > 200mm | > 250mm | 72h |
 
 ---
 
 ## 🔧 Solución de Problemas
 
-### **Windows - "Python no se reconoce":**
+**Windows - "Python no reconocido":**
 ```cmd
 py -m pip install -r requirements.txt
-py simular_datos.py
-py -m streamlit run app.py
 ```
 
-### **"No se encontró archivo de torres":**
+**"No se encontró archivo de torres":**
 ```bash
 cd dashboard
 python simular_datos.py
 ```
 
-### **"Port 8501 already in use":**
+**Puerto 8501 ocupado:**
 ```bash
 streamlit run app.py --server.port 8502
 ```
 
+**PowerShell - Error de permisos:**
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Tecnologías
 
 - **Streamlit** - Dashboard interactivo
 - **Plotly** - Visualizaciones
@@ -144,29 +147,29 @@ streamlit run app.py --server.port 8502
 
 ---
 
-## 📓 Notebooks de Análisis
+## 📊 Notebooks
 
-Análisis exploratorio en Jupyter:
-
-1. **01-exploracion-tiff-amenaza.ipynb**  
-   Lectura y clasificación de raster de amenaza (optimizado para archivos >100MB)
-
-2. **02-analisis-torres-precipitacion.ipynb**  
-   Integración con API de precipitación y cálculo de alertas
+1. **01-exploracion-tiff-amenaza.ipynb**: Lectura y clasificación de raster de amenaza (optimizado para archivos >100MB)
+2. **02-analisis-torres-precipitacion.ipynb**: Integración con API y cálculo de alertas
 
 ---
 
-## 📝 Notas Importantes
+## 📝 Notas
 
-- Datos simulados (prototipo para prueba técnica)
+- Datos simulados (prototipo)
 - API gratuita: ~10,000 llamadas/día
 - Archivos `.tif` grandes excluidos del repositorio
+- `venv/` no se sube a GitHub (en `.gitignore`)
 
 ---
 
-## 📧 Contacto
+## 👤 Candidato
 
-- GitHub: [@Pipe1017](https://github.com/Pipe1017)  
-- Repositorio: [isa-geospatial-alerts](https://github.com/Pipe1017/isa-geospatial-alerts)
+**Felipe Ruiz Zea**  
+Analista de Datos de Mantenimiento  
+ISA INTERCOLOMBIA  
+GitHub: [@Pipe1017](https://github.com/Pipe1017)
 
 ---
+
+**Versión**: 1.0 | **Enero 2025**
