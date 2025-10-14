@@ -1,6 +1,3 @@
-Perfecto, aquí está el README conciso y al grano:
-
-```markdown
 # 🛰️ Sistema de Alerta Temprana de Deslizamientos
 
 Prototipo de dashboard interactivo que combina datos de amenaza geoespacial y precipitación en tiempo real para generar alertas operacionales en torres de transmisión.
@@ -23,27 +20,53 @@ Sistema que monitorea 15 torres en Arauca, Norte de Santander y Boyacá, generan
 
 ### Requisitos
 - Python 3.8+
-- Internet (para API de lluvia)
+- Git
+- Conexión a Internet (para descargar dependencias y usar la API de lluvia)
 
-### Instalación
+### ⚙️ Instalación y Configuración
 
+Para mantener las dependencias del proyecto aisladas y evitar conflictos, este repositorio incluye un entorno virtual (`venv`). Sigue los pasos correspondientes a tu sistema operativo.
+
+---
+#### 🔹 **Opción 1: macOS / Linux** (En la Terminal)
 ```bash
-# 1. Clonar repositorio
-git clone https://github.com/Pipe1017/isa-geospatial-alerts.git
+# 1. Clonar el repositorio y moverse a la carpeta
+git clone [https://github.com/Pipe1017/isa-geospatial-alerts.git](https://github.com/Pipe1017/isa-geospatial-alerts.git)
 cd isa-geospatial-alerts
 
-# 2. Instalar dependencias
+# 2. Activar el entorno virtual
+# (Notarás que la línea de comandos ahora empieza con "(venv)")
+source venv/bin/activate
+
+# 3. Instalar las dependencias requeridas
 pip install -r requirements.txt
 
-# 3. Generar datos de prueba
+# 4. Navegar a la carpeta del dashboard y generar datos de prueba
 cd dashboard
 python simular_datos.py
 
-# 4. Ejecutar dashboard
+# 5. Ejecutar el dashboard
 streamlit run app.py
-```
 
-✅ El dashboard se abre automáticamente en `http://localhost:8501`
+#### 🔹 Opción 2: Windows (En PowerShell o Command Prompt)
+
+# 1. Clonar el repositorio y moverse a la carpeta
+git clone [https://github.com/Pipe1017/isa-geospatial-alerts.git](https://github.com/Pipe1017/isa-geospatial-alerts.git)
+cd isa-geospatial-alerts
+
+# 2. Activar el entorno virtual
+# (Notarás que la línea de comandos ahora empieza con "(venv)")
+.\venv\Scripts\activate
+
+# 3. Instalar las dependencias requeridas
+pip install -r requirements.txt
+
+# 4. Navegar a la carpeta del dashboard y generar datos de prueba
+cd dashboard
+python simular_datos.py
+
+# 5. Ejecutar el dashboard
+streamlit run app.py
 
 ---
 
@@ -150,13 +173,3 @@ ISA INTERCOLOMBIA
 
 GitHub: [@Pipe1017](https://github.com/Pipe1017)  
 Repositorio: [isa-geospatial-alerts](https://github.com/Pipe1017/isa-geospatial-alerts)
-```
-
-**Cambios clave:**
-- ✂️ Reducido a ~200 líneas (vs ~600 anterior)
-- 🎯 Directo al grano: qué es y cómo ejecutarlo
-- 💼 Contexto claro: prueba técnica para ISA
-- ⚡ Solo lo esencial: instalación, uso, troubleshooting
-- 📱 Fácil de leer en GitHub
-
-¿Te parece bien así? 🚀
