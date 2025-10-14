@@ -1,10 +1,17 @@
 # 🛰️ Sistema de Alerta Temprana de Deslizamientos
 
+**Prueba Técnica: Analista de Datos de Mantenimiento**  
+**Candidato: Felipe Ruiz**  
+**Fecha: Octubre 2025**
+
+---
+
 Prototipo de dashboard interactivo que combina datos de amenaza geoespacial y precipitación en tiempo real para generar alertas operacionales en torres de transmisión.
 
 ## 🎯 ¿Qué hace este proyecto?
 
 Sistema que monitorea 15 torres en Arauca, Norte de Santander y Boyacá, generando 3 niveles de alerta:
+
 - 🟢 **Verde**: Condiciones normales
 - 🟡 **Amarilla**: Precaución - aumentar monitoreo  
 - 🔴 **Roja**: Crítica - acción inmediata requerida
@@ -16,15 +23,12 @@ Sistema que monitorea 15 torres en Arauca, Norte de Santander y Boyacá, generan
 
 ---
 
-
-### ⚙️ Instalación y Configuración
+## ⚙️ Instalación y Configuración
 
 Para mantener las dependencias del proyecto aisladas y evitar conflictos, este repositorio incluye un entorno virtual (`venv`).  
 Sigue los pasos correspondientes a tu sistema operativo.
 
----
-
-#### 🔹 **Opción 1: Windows** (En PowerShell o Command Prompt)
+### 🔹 Opción 1: Windows (En PowerShell o Command Prompt)
 
 ```bash
 # 1. Clonar el repositorio y moverse a la carpeta
@@ -44,8 +48,11 @@ python simular_datos.py
 
 # 5. Ejecutar el dashboard
 streamlit run app.py
+```
 
-🔹 Opción 2: macOS / Linux (En la Terminal)
+### 🔹 Opción 2: macOS / Linux (En la Terminal)
+
+```bash
 # 1. Clonar el repositorio y moverse a la carpeta
 git clone https://github.com/Pipe1017/isa-geospatial-alerts.git
 cd isa-geospatial-alerts
@@ -63,11 +70,11 @@ python simular_datos.py
 
 # 5. Ejecutar el dashboard
 streamlit run app.py
-
+```
 
 ---
 
-## 📁 Estructura
+## 📁 Estructura del Proyecto
 
 ```
 isa-geospatial-alerts/
@@ -93,7 +100,7 @@ isa-geospatial-alerts/
 
 ---
 
-## 📖 Matriz de Umbrales
+## 📊 Matriz de Umbrales
 
 | Amenaza | 🟡 Amarilla | 🔴 Roja |
 |---------|-------------|---------|
@@ -107,27 +114,27 @@ isa-geospatial-alerts/
 
 ## 🔧 Solución de Problemas
 
-**Windows - "Python no se reconoce":**
+### **Windows - "Python no se reconoce":**
 ```cmd
 py -m pip install -r requirements.txt
 py simular_datos.py
 py -m streamlit run app.py
 ```
 
-**"No se encontró archivo de torres":**
+### **"No se encontró archivo de torres":**
 ```bash
 cd dashboard
 python simular_datos.py
 ```
 
-**"Port 8501 already in use":**
+### **"Port 8501 already in use":**
 ```bash
 streamlit run app.py --server.port 8502
 ```
 
 ---
 
-## 🛠️ Tecnologías
+## 🛠️ Tecnologías Utilizadas
 
 - **Streamlit** - Dashboard interactivo
 - **Plotly** - Visualizaciones
@@ -137,7 +144,7 @@ streamlit run app.py --server.port 8502
 
 ---
 
-## 📊 Notebooks
+## 📓 Notebooks de Análisis
 
 Análisis exploratorio en Jupyter:
 
@@ -149,7 +156,7 @@ Análisis exploratorio en Jupyter:
 
 ---
 
-## 📝 Notas
+## 📝 Notas Importantes
 
 - Datos simulados (prototipo para prueba técnica)
 - API gratuita: ~10,000 llamadas/día
@@ -157,16 +164,9 @@ Análisis exploratorio en Jupyter:
 
 ---
 
-## 👤 Autor
-
-**Felipe Ruiz Zea**  
-Candidato a Analista de Datos - Mantenimiento  
-ISA INTERCOLOMBIA  
-2025
-
----
-
 ## 📧 Contacto
 
-GitHub: [@Pipe1017](https://github.com/Pipe1017)  
-Repositorio: [isa-geospatial-alerts](https://github.com/Pipe1017/isa-geospatial-alerts)
+- GitHub: [@Pipe1017](https://github.com/Pipe1017)  
+- Repositorio: [isa-geospatial-alerts](https://github.com/Pipe1017/isa-geospatial-alerts)
+
+---
