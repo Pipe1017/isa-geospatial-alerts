@@ -49,7 +49,7 @@ python simular_datos.py
 streamlit run app.py
 
 ---
-#### 🔹 Opción 2: Windows (En PowerShell o Command Prompt)
+#### 🔹 **Opción 2: Windows (En PowerShell o Command Prompt)
 ```bash
 # 1. Clonar el repositorio y moverse a la carpeta
 git clone [https://github.com/Pipe1017/isa-geospatial-alerts.git](https://github.com/Pipe1017/isa-geospatial-alerts.git)
